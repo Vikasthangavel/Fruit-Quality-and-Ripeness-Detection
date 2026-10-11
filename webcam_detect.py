@@ -177,7 +177,10 @@ def main():
 
     finally:
         camera.release()
-        cv2.destroyAllWindows()
+        try:
+            cv2.destroyAllWindows()
+        except Exception:
+            pass
         print("Camera released and windows closed.")
 
 
