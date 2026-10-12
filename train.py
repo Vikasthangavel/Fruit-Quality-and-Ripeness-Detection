@@ -232,7 +232,6 @@ def main():
     print(f"Class names saved  : {args.classes_path}")
     print("=" * 60)
 
-    # ---------------- PLOT METRICS -----------------
     print("\n[5/5] Generating training curves plot...")
     plot_history(history, output_path="training_history.png")
 
